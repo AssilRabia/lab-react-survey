@@ -1,16 +1,15 @@
 @import './../../styles/_variables.scss';
 
 .Login {
-
-  width: 350px;
-  height: 300px;
+  width: 450px;
+  height: 350px;
   background: $base-color-three-rgb-op3;
   position: absolute;
   top: 50vh;
   left: 50vw;
   transform: translate(-50%,-50%);
-  border-radius: .05rem;
-  box-shadow: 0 1px 1.3rem 1px rgba(0,0,0,.7);
+  box-shadow: 0px 8px 10px -5px rgba(0, 0, 0, 0.2), 0px 16px 24px 2px rgba(0, 0, 0, 0.14), 0px 6px 30px 5px rgba(0, 0, 0, 0.12) !important;
+  border-radius: 0;
   display: flex;
   flex-flow: column;
 
@@ -21,9 +20,9 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    h2 {
+    p {
       color: $base-color-1;
-      font-size: 1.8rem;
+      font-size: 130%;
       margin: 0;
     }
   }
@@ -31,7 +30,7 @@
   &__fieldContainer {
 
     &-inputField {
-      margin-top: 3.5rem;
+      margin-top: 3.7rem;
     }
 
     &-input{
@@ -39,11 +38,11 @@
       color: $base-font-color;
       font-size: 18px;
       margin: 0 auto;
-      padding: 10px 20px;
-      border-radius: 4px;
+      padding: 12px 20px;
+      border-radius: 2px;
       background-color: $base-color-1;
-      border: none;
-      width: 70% !important;
+      border: 1.5px solid $base-color-two !important;
+      width: 80% !important;
       display: block;
       transition: all 0.3s ease;
 
@@ -51,12 +50,12 @@
         outline: none;
       }
 
-      &:placeholder-shown + .Login__fieldContainer-label {
-        opacity: 0;
-        visibility: hidden;
-        -webkit-transform: translateY(-4rem);
-        transform: translateY(-4rem);
-      }
+      //&:placeholder-shown + .Login__fieldContainer-label {
+      //  opacity: 0;
+      //  visibility: hidden;
+      //  -webkit-transform: translateY(-4rem);
+      //  transform: translateY(-4rem);
+      //}
 
     }
 
@@ -75,10 +74,9 @@
       position: absolute;
       left: 50%;
       transform: translateX(-50%);
-      bottom: 20px;
-      text-transform: uppercase;
+      top : 180px;
       text-decoration: none;
-      background-color: rgba(99, 99, 168, 0.85);
+      background-color: rgba(40, 39, 106, 0.85);
       width: 90%;
       color: #FFF ;
       cursor: pointer;
@@ -86,9 +84,9 @@
       text-align: center;
       font-family: inherit;
       letter-spacing: .5px;
-      font-size: 1.2rem;
-      border-radius: 4px;
-      transition: .2s ease;
+      font-size: 1rem;
+      border-radius: 2px;
+      transition: 0.4s ease;
       border: none;
       box-shadow: none;
 
@@ -116,6 +114,18 @@
 }
 
 
+.error_msg {
+  position: absolute;
+  top : 220px;
+  color:rgba(255, 0, 0, 0.56);
+  margin-left:23px ;
+  background-color: rgba(186, 0, 0, 0.13);
+  border: 0.5px solid rgba(255, 0, 0, 0.56);
+  padding: 12px;
+  width: 83%;
+  margin-top: 70px;
+  text-align: center;
+}
 
 
 
