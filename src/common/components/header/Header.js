@@ -39,7 +39,7 @@ class Header extends Component {
 							<Typography variant="title" color="inherit" className={classes.flex}>
 								{appName}
 							</Typography>
-							<Avatar alt="Carlos Lenon" src="https://avatars0.githubusercontent.com/u/4239218?s=460&v=4" className={classes.avatar} />
+							{/*<Avatar alt="Carlos Lenon" src="https://avatars0.githubusercontent.com/u/4239218?s=460&v=4" className={classes.avatar} />*/}
 						</Toolbar>
 					</AppBar>
 				</Fade>				
